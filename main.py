@@ -1,14 +1,13 @@
-h,x,y=input().split()
-h=int(h)
+x,y,l,d=input().split()
+l=int(l)
 x=int(x)
 y=int(y)
-for i in range(0,h):
-    print('*',end='')
-    if i==0 or i==y-1:
-        for j in range(0,x-1):
-            print('*',end='')
-    elif i<y:
-        for j in range(0,x-2):
-            print(' ',end='')
+d=int(d)
+for i in range(0,y): # 输出图书馆
+    for j in range(0,x):
         print('*',end='')
     print()
+for i in range(0,l): # 输出电缆
+    for j in range(0,d): # 输出电缆左边距
+        print(' ',end='')
+    print('|')
